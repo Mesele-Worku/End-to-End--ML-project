@@ -9,7 +9,7 @@ app.use(express.json());
 app.post("/api/predict", async (req, res) => {
   try {
     const response = await axios.post(
-      "http://localhost:5000/predict",
+      "http://54.175.26.202:5000/predict",
       req.body
     );
     res.json(response.data);
