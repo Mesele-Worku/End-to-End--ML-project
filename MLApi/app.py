@@ -7,8 +7,8 @@ app = Flask(__name__)
 CORS(app)
 
 # Load model and scaler
-model = joblib.load('best_diabetes_model.pkl')
-scaler = joblib.load('scaler.pkl')  # Make sure you saved this during training
+model = joblib.load('evangadi_best_diabetes_model.pkl')
+scaler = joblib.load('evangadi_scaler.pkl')  
 
 @app.route('/predict', methods=['POST'])
 def predict():
